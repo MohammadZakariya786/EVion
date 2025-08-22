@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from './component/Hero'
-import Navbar from './component/Navbar'
-import Logoanimation from './component/Logoanimation'
+import Hero from './Component/Hero'
+import Navbar from './Component/Navbar'
+import Logoanimation from './Component/Logoanimation'
 
 const App = () => {
   return (
