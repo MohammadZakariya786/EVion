@@ -8,9 +8,9 @@ const Logoanimation = () => {
   return (
     <section className='max-w-[1400px] relative '>
         <div className='w-full absolute -top-10 h-10 bg-gradient-to-t from-black to-transparent'></div>
-        <div className='bg-black flex px-10 gap-x-20 justify-between'>
+        <div className='bg-black flex  md:px-10 px-5 md:gap-x-20 gap-x-3 md:justify-between'>
     {logos.map((user)=>(
-    <div key={user.id} className={`h-50 w-50 flex justify-center items-center ${user.extraClass || ''}`}>
+    <div key={user.id} className={`md:h-50 md:w-50 w-20 h-20 flex justify-center items-center ${user.extraClass || ''}`}>
     <img src={user.img} className='animate-pulse h-full  w-full object-contain'/>
     </div>
     ))}
@@ -28,7 +28,7 @@ const logos=[
     },
     {
         id:2,
-        img:tata, extraClass:'w-[150px]'
+        img:tata, extraClass:'md:w-[150px] w-[60px]'
     },
     {
         id:3,
@@ -36,10 +36,10 @@ const logos=[
     },
     {
         id:4,
-        img:mercedes,extraClass:'w-[120px]'
+        img:mercedes,extraClass:'md:w-[120px] w-[60px]'
     },
     {
         id:5,
-        img:toyota,extraClass:'w-[100px]'
+        img:toyota,extraClass:'md:w-[100px] w-[40px]'
     },
 ]

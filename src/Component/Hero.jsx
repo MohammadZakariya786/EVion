@@ -36,11 +36,12 @@ const Hero = () => {
         <div className='absolute h-60 w-full left-0 bottom-0 bg-gradient-to-t 
         from-black/80  to-transparent'></div>
         <div className='flex flex-col md:gap-y-20 z-10 relative w-full h-full justify-center items-center'>
-            <h3 className='md:-translate-y-8  font-sans font-bold'>The Future Moves at the Speed Of</h3>
-            <h2 className='tracking-wider  md:text-[150px] text-6xl mix-blend-difference font-extrabold text-transparent [-webkit-text-stroke:4px_black] md:-translate-x-3 translate-x-6 md:-translate-y-40
-            -translate-y-25
-             [mask-image:radial-gradient(ellipse_45%_60%_at_center_bottom,transparent_60%,black_90%)]
-                       [-webkit-mask-image:radial-gradient(ellipse_50%_60%_at_center_bottom,transparent_20%,black_80%)'>Charge</h2>
+            <h3 className='absolute top-[19%] left-[28%] md:top-[24%] md:left-[39%] md:text-[1.7vw] md:text-black  text-[4vw] text-white  font-sans font-bold'>The Future Moves at the Speed Of</h3>
+            <h2 className='tracking-wider  md:text-[150px] text-[25vw] md:mix-blend-difference font-extrabold text-transparent [-webkit-text-stroke:2px_white] md:[-webkit-text-stroke:4px_black] md:-translate-x-3
+            absolute md:top-[15%] top-[15%]
+            
+             md:[mask-image:radial-gradient(ellipse_45%_60%_at_center_bottom,transparent_60%,black_90%)]
+                       md:[-webkit-mask-image:radial-gradient(ellipse_50%_60%_at_center_bottom,transparent_20%,black_80%)'>Charge</h2>
         </div>    
         <div className='absolute bottom-10 right-15 flex -space-x-4 items-center'>
         {
