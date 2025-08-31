@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
  
+.gpu-boost {
+  will-change: transform,opacity;
+  transform: translateZ(0);
+}
+
 .marquee {
   display: flex;
   animation: scroll 15s linear infinite;
@@ -14,3 +19,30 @@
     transform: translateX(-50%);
   }
 }
+
+.swiper-pagination {
+  margin-bottom: 5px;
+}
+
+.swiper-pagination-bullet {
+  background: transparent !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  
+  
+}
+
+/* Inactive bullets */
+.swiper-pagination-bullet img {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* Active bullet styling */
+.swiper-pagination-bullet-active img {
+  border-color:white;
+  opacity: 1;
+  transform: scale(1.3);
+}
+
