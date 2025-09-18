@@ -7,7 +7,7 @@ import iphone from '../assets/appstore.png'
 
 const Footer = () => {
   return (
-    <section className='max-w-[1400px] pt-10  bg-black/90'>
+    <section className='max-w-[1440px] pt-10  bg-black/90'>
     {/* parent container  */}
     <div className='grid grid-cols-2 md:px-10 px-5 mb-5'>
         {/* parent containerof left side  */}

@@ -12,8 +12,8 @@ const Keybenefits = () => {
     const containerRef=useRef();
     useGSAP(()=>{
     gsap.from(".charger-img",{
-    scale:0.3,
-    opacity: 0,
+    y:150,
+    // opacity: 0,
     duration: 1,
     ease: 'circ.out', 
     scrollTrigger: {
@@ -84,56 +84,70 @@ const Keybenefits = () => {
         <div className='md:px-10 px-5  text-white z-10 relative h-full flex flex-col'>
             <div className='text-center pt-20'>
                 <h1 className='container-heading md:text-4xl text-3xl font-medium tracking-tight'>KEY BENEFITS</h1>
-                <p className='container-heading md:pt-5 pt-3 text-xs md:-mb-0 -mb-30'>Unlock the core advantages of our EV charger—designed for speed,intelligence and compatibility with every ride.</p>
+                <p className='container-heading md:pt-5 pt-3 text-xs md:text-sm md:-mb-0 -mb-30'>Unlock the core advantages of our EV charger—designed for speed,intelligence and compatibility with every ride.</p>
             </div>
             <div className=' relative flex justify-center items-center flex-1'>
-                <div className='charger-img'>
+                <div className='charger-img gpu-boost'>
                 <img src={ChargerImg}  className='gpu-boost md:h-100 h-[80vh]  md:w-100 w-[80vh] object-contain transition duration-300 hover:drop-shadow-[0_0_10px_white] '/>
                 </div>
                 {/* left side points  */}
                 {/* point 1  */}
-                <div className='container-leftText absolute md:top-[25%] top-[35%] md:left-[12%] left-[1%] flex items-center md:w-100 w-32'>
+                <div className='container-leftText gpu-boost absolute md:top-[25%] top-[35%] md:left-[12%] left-[1%]'>
+                <div className='flex items-center md:w-100 w-32'>
                 <h4 className=' md:text-lg text-[12px] w-[70px] md:w-fit font-light whitespace-nowrap'>Fast & Reliable <br/> Charging</h4>
-                <div className='h-[0.1rem] flex-1 bg-gradient-to-l from-white to-transparent '></div>
+                <div className='h-[0.1rem] flex-1 bg-gradient-to-l from-white 
+                to-transparent '>           
+                </div>
                 <div className='md:w-6 w-5 md:h-6 h-5   bg-gray-500 rounded-full flex items-center justify-center'>
                 <FaCircle className='text-white md:text-xs text-[10px]'/></div>
                 </div>
+                </div>
                 {/* point 2  */}
-                <div className='container-leftText absolute md:top-[53%] top-[50%] md:left-[12%] left-[3%] flex items-center md:w-100 w-32'>
+                <div className='container-leftText gpu-boost absolute md:top-[53%] top-[50%] md:left-[12%] left-[3%]'>
+                <div className=' flex items-center md:w-100 w-32'>
                 <h4 className=' md:text-lg text-[12px] w-[50px] md:w-fit font-light'>Multiple Charging Options</h4>
                 <div className='h-[0.1rem] flex-1 bg-gradient-to-l from-white to-transparent '></div>
                 <div className='md:w-6 w-5 md:h-6 h-5   bg-gray-500 rounded-full flex items-center justify-center'>
                 <FaCircle className='text-white md:text-xs text-[10px]'/></div>
                 </div>
+                </div>
                 {/* point 3  */}
-                <div className='container-leftText absolute md:top-[77%] top-[66%] md:left-[12%] left-[1%] flex items-center md:w-100 w-31'>
+                <div className='container-leftText gpu-boost absolute md:top-[77%] top-[66%] md:left-[12%] left-[1%]'>
+                <div className=' flex items-center md:w-100 w-31'>
                 <h4 className=' md:text-lg text-[12px] w-[70px] md:w-fit font-light whitespace-nowrap'>24/7 Customer<br/> Support</h4>
                 <div className='h-[0.1rem] flex-1 bg-gradient-to-l from-white to-transparent '></div>
                 <div className='md:w-6 w-5 md:h-6 h-5   bg-gray-500 rounded-full flex items-center justify-center'>
                 <FaCircle className='text-white text-[10px]'/></div>
                 </div>
+                </div>
                 {/* Right side points  */}
                 {/* point 4  */}
-                <div className='container-rightText absolute md:top-[18%] top-[30%] md:right-[14%] right-[10%] flex items-center md:w-100 w-30'>
+                <div className='container-rightText gpu-boost absolute md:top-[18%] top-[30%] md:right-[14%] right-[10%]'>
+                <div className=' flex items-center md:w-100 w-30'>
                 <div className='md:w-6 w-5 md:h-6 h-5   bg-gray-500 rounded-full flex items-center justify-center'>
                 <FaCircle className='text-white text-[10px]'/></div>
                 <div className='h-[0.1rem] flex-1 bg-gradient-to-l from-transparent to-white '></div>
                 <h4 className=' md:text-lg text-[12px] w-[65px] md:w-fit font-light'>Easy-to-Use Platform</h4>
                 </div>
+                </div>
                 {/* point 5  */}
-                <div className='container-rightText absolute md:top-[39%] top-[60%] md:right-[14%] right-[10%] flex items-center md:w-100 w-30'>
+                <div className='container-rightText gpu-boost absolute md:top-[39%] top-[60%] md:right-[14%] right-[10%]'>
+                <div className=' flex items-center md:w-100 w-30'>
                 <div className='md:w-6 w-5 md:h-6 h-5   bg-gray-500 rounded-full flex items-center justify-center'>
                 <FaCircle className='text-white text-[10px]'/></div>
                 <div className='h-[0.1rem] flex-1 bg-gradient-to-l from-transparent to-white '></div>
                 <h4 className=' md:text-lg text-[12px] w-[65px] md:w-fit font-light'>Eco-Friendly Commitement</h4>
 
                 </div>
+                </div>
                 {/* point 6  */}
-                <div className='container-rightText absolute md:top-[65%] top-[43%] md:right-[14%] right-[10%] flex items-center md:w-100 w-30'>
+                <div className='container-rightText gpu-boost absolute md:top-[65%] top-[43%] md:right-[14%] right-[10%]'>
+                <div className=' flex items-center md:w-100 w-30'>
                 <div className='md:w-6 w-5 md:h-6 h-5   bg-gray-500 rounded-full flex items-center justify-center'>
                 <FaCircle className='text-white text-[10px]'/></div>
                 <div className='h-[0.1rem] flex-1 bg-gradient-to-l from-transparent to-white '></div>
                 <h4 className=' md:text-lg text-[12px] w-[65px] md:w-fit font-light'>Transparent Pricing</h4>
+                </div>
                 </div>
                 
                 

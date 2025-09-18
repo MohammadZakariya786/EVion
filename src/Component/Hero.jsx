@@ -45,14 +45,14 @@ const Hero = () => {
                 opacity:0,
                 duration:1,
                 ease:'power2.out',})
-            gsap.from('.a',{
+            gsap.from('.word-a span',{
                 y:100,duration:1,delay:1,
                 stagger:{each:0.3,from:'start'},
                 opacity:0,
                 ease:'power2.out',
                 
             })
-            gsap.from('.b',{
+            gsap.from('.word-b span',{
                 y:100,duration:1,delay:1,
                 stagger:{each:0.3,from:'end'},
                 opacity:0,
@@ -67,8 +67,11 @@ const Hero = () => {
 
     const renderUsers=users.map((user,i)=>{
         return(
-            <div className=' user-icon gpu-boost  md:h-8 h-7 md:w-8 w-7'>
+            <div className='user-icon'
+            key={user.id}>
+            <div className='gpu-boost  md:h-8 h-7 md:w-8 w-7'>
                 <img className='w-full h-full outline-2 outline-white overflow-hidden rounded-full object-contain' src={user.img}/>
+            </div>
             </div>
         )
     })
@@ -93,18 +96,31 @@ const Hero = () => {
             {/* h3 text for mobile  */}
             <h3 className='heading-1 text-center md:hidden block absolute top-[13%]  text-[3vh]/7  text-white  font-sans font-bold'>The Future<br/><span className='text-6xl inline-block -mt-2 text-transparent [-webkit-text-stroke:2px_white]'>M<span className='text-[32px] text-white inline-block animate-spin'><GiCarWheel/></span>ves</span> <br/><span className=''>at the Speed<br/>Of</span></h3>
             {/* h3 text for laptop  */}
-            <h3 className='heading-1 md:block hidden absolute  md:top-[20%] md:text-[1.7vw] md:text-black  font-sans font-bold'>The Future <span className='text-3xl inline-block  text-black'>M<span className='text-[18px] text-black inline-block animate-spin'><GiCarWheel/></span>ves</span> at the Speed Of</h3>
-            <h2 className='gpu-boost  tracking-wider  md:text-[130px] text-[20vw] md:mix-blend-difference font-extrabold text-transparent [-webkit-text-stroke:2px_white] md:[-webkit-text-stroke:4px_black] md:-translate-x-3
-            absolute md:top-[18%] top-[30%]
+            <h3 className='heading-1 md:block hidden absolute  md:top-[25%] lg:top-[20%] md:text-[3.8vw]
+            lg:text-[2.2vw] md:text-black  font-sans font-bold'>The Future <span className='text-3xl
+            md:text-[3.8vw] lg:text-[2.2vw] inline-block  text-black'>M<span className='text-[18px] 
+             md:text-[2.3vw] lg:text-[1.7vw]  text-black inline-block animate-spin'><GiCarWheel/></span>ves</span> at the Speed Of</h3>
+            <h2 className='gpu-boost flex  tracking-wider  md:text-[130px] text-[20vw] md:mix-blend-difference font-extrabold text-transparent [-webkit-text-stroke:2px_white] md:[-webkit-text-stroke:4px_black] 
+            absolute left-1/2 -translate-x-1/2
+  top-3/8 -translate-y-1/2 
+  sm:top-[42%] sm:-translate-y-1/2 md:-translate-x-[300px]
+  md:top-[35%] md:-translate-y-1/2
+  lg:top-[33%] lg:-translate-y-1/2
+  xl:top-[35%] xl:-translate-y-1/2
             
-             md:[mask-image:radial-gradient(ellipse_45%_60%_at_center_bottom,transparent_60%,black_90%)]
+             md:[mask-image:radial-gradient(ellipse_52%_70%_at_center_bottom,transparent_62%,black_90%)]
+             xl:[mask-image:radial-gradient(ellipse_56%_70%_at_center_bottom,transparent_60%,black_90%)]
                        md:[-webkit-mask-image:radial-gradient(ellipse_50%_60%_at_center_bottom,transparent_20%,black_80%)'>
-                        <span className='a inline-block'>C</span>
-                        <span className='a inline-block'>H</span>
-                        <span className='a inline-block'>A</span>
-                        <span className='b inline-block'>R</span>
-                        <span className='b inline-block'>G</span>
-                        <span className='b inline-block'>E</span>
+                        <div className='word-a flex'>
+                        <span className=' gpu-boost inline-block'>C</span>
+                        <span className=' gpu-boost inline-block'>H</span>
+                        <span className=' gpu-boost inline-block'>A</span>
+                        </div>
+                        <div className='word-b flex'>
+                        <span className=' gpu-boost inline-block'>R</span>
+                        <span className=' gpu-boost inline-block'>G</span>
+                        <span className=' gpu-boost inline-block'>E</span>
+                        </div>
                         </h2>
         </div>    
         <div className='absolute bottom-15 right-15 flex -space-x-4 items-center'>

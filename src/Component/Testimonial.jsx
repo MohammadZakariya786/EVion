@@ -111,7 +111,7 @@ const containerRef=useRef();
 
 
   return (
-    <section ref={containerRef} className='max-w-[1400px] mx-auto overflow-x-hidden'>
+    <section ref={containerRef} className='max-w-[1440px] mx-auto overflow-x-hidden'>
         <div className='relative  md:px-10 px-5'>
             <div className='absolute inset-0 bg-black/80 w-full z-10'></div>
             <div className='absolute top-0 left-0 bg-gradient-to-b from-black to-transparent text-transparent h-8 w-full z-10'></div>

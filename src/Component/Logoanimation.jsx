@@ -21,7 +21,7 @@ const Logoanimation = () => {
         })
     },[])
   return (
-    <section ref={containerRef} className='max-w-[1400px] relative '>
+    <section ref={containerRef} className='max-w-[1440px] relative '>
         <div className='w-full absolute -top-10 h-10 bg-gradient-to-t from-black to-transparent'></div>
         <div className='bg-black flex  md:justify-between'>
      <div className='overflow-hidden relative'>

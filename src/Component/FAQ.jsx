@@ -74,7 +74,7 @@ const FAQ = () => {
     }
 
   return (
-    <section ref={containerRef} className='overflow-hidden max-w-[1400px] bg-black mx-auto pt-15 pb-15'>
+    <section ref={containerRef} className='overflow-hidden max-w-[1440px] bg-black mx-auto pt-15 pb-15'>
     <div className='md:px-10 px-5'>
     <h3 className='heading md:text-4xl text-2xl text-center text-white tracking-tight font-medium pb-10'>EVERYTHING YOU NEED TO KNOW</h3>
     {/* parent container of both text and img  */}
@@ -87,7 +87,9 @@ const FAQ = () => {
             
         <div key={info.id} className='container-card text-white bg-black flex justify-between space-y-5'>
         {/* left section of text  */}
-        <div className={`border-b-1 border-white/30 py-1  flex flex-col justify-between ${activeToggle===info.id?'max-h-50':'max-h-15  overflow-hidden'} transition-all duration-300`}>
+        <div className={`border-b-1 border-white/30 py-1  flex flex-col justify-between ${activeToggle===info.id?'max-h-50':'max-h-15  overflow-hidden'} transition-all duration-300`}
+        onClick={()=>dropdownmenu(info.id)}
+        >
         <h3 className='font-semibold md:text-lg text-md pb-8  pr-3'>{info.question}</h3>
         <p className='md:text-sm text-xs font-sans pb-5 pr-3 text-white/60'>{info.answer}</p>
         </div>
@@ -99,12 +101,12 @@ const FAQ = () => {
         )})}
         </div>
         {/* image section  */}
-        <div className='relative  md:ml-10 ml-5 border-y-5 border-l-10 border-r-0 border-white rounded-bl-full rounded-l-full  z-50 w-full md:h-100 h-80  flex'
+        <div className='relative md:ml-10 ml-5 border-y-5 border-l-10 border-r-0 border-white rounded-bl-full rounded-l-full  z-50 w-full md:h-100 h-80  flex'
         style={{backgroundImage:`url(${bgImg})`,backgroundSize:'cover',backgroundPosition:'right',backgroundRepeat:'no-repeat'}}>
         <div className='absolute inset-0  overflow-hidden rounded-bl-full rounded-l-full'>
-          <img src={charger} className='container-chargerImg absolute  md:-top-10 bottom-25  right-0   object-contain   z-10  translate-x-4 rounded-lg md:w-80 w-50 md:h-80 h-50 transform scale-x-[-1]'/>
+          <img src={charger} className='container-chargerImg absolute  lg:-top-10 bottom-25  right-0   object-contain   z-10  translate-x-4 rounded-lg md:w-60 md:h-60 lg:w-80 w-50 lg:h-80 h-50 transform scale-x-[-1]'/>
         </div>
-        <img src={pic2} className='container-carImg absolute  md:top-10 -bottom-23 translate-x-2 object-cover  rounded-lg md:w-140  md:h-140  z-40 drop-shadow-[0_10px_10px_rgba(0,0,0,0.7)] '/>
+        <img src={pic2} className='overflow-visible container-carImg absolute  lg:top-10 -bottom-23 translate-x-2 object-cover  rounded-lg  md:w-80 md:h-80  lg:w-140  lg:h-140  z-40 drop-shadow-[0_10px_10px_rgba(0,0,0,0.7)] '/>
         
     </div>
     </div>

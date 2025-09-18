@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         {/* page section  */}
         <div className='flex   items-center'>
-        <div className='hidden  md:flex'>
+        <div className='hidden  lg:flex'>
             <ul className='flex gap-x-10 text-md  font-medium text-white'>
                 <li> <a href='/chargingstation' className=' transition-all duration-200 ease-in-out active:scale-1.1 hover:border-b-2 hover:border-white'>Charging Station</a></li>
                 <li> <a href='/support' className=' transition-all duration-200 ease-in-out active:scale-1.1 hover:border-b-2 hover:border-white'>Support</a></li>
@@ -43,11 +43,11 @@ const Navbar = () => {
         </div>
         <div className='flex items-center gap-x-4'>
         <button className='bg-white  text-zinc-800 md:py-1 py-[5px] md:text-[12px] text-[10px]  md:px-3 px-3 rounded-full font-medium cursor-pointer'>Download App</button>
-        <button onClick={handleMenu} className={`${toggleMenu?'rotate-90':'rotate-0'} transition-all duration-300 md:hidden flex text-white text-2xl`}>{toggleMenu? <VscChromeClose/>:<GiHamburgerMenu/>}</button>
+        <button onClick={handleMenu} className={`${toggleMenu?'rotate-90':'rotate-0'} transition-all duration-300 lg:hidden flex text-white text-2xl`}>{toggleMenu? <VscChromeClose/>:<GiHamburgerMenu/>}</button>
         </div>
     </nav>
     {/* hamburger menu  */}
-    <div className={`md:hidden flex mt-2 ${toggleMenu?"max-h-80 opacity-100":"max-h-0 opacity-0"} transition-all duration-500 overflow-hidden ease-in-out`}>
+    <div className={`lg:hidden flex mt-2 ${toggleMenu?"max-h-80 opacity-100":"max-h-0 opacity-0"} transition-all duration-500 overflow-hidden ease-in-out`}>
             <ul className='flex flex-col w-full text-center gap-x-8 text-md  font-medium text-white'>
                 <li className='border-y py-3 border-white/60 transition-colors active:bg-white active:text-zinc-800'>
                 Charging Station

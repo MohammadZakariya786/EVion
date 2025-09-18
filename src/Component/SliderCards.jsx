@@ -21,7 +21,7 @@ const SliderCards = () => {
     const dotsImage=[cardimg1,cardimg2,cardimg3,cardimg4]
 
   return (
-    <section className='relative max-w-[1400px]'>
+    <section className='relative max-w-[1440px]'>
     
     <Swiper
     spaceBetween={30}

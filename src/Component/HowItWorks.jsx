@@ -46,7 +46,7 @@ const HowItWorks = () => {
 
   return (
     <section>
-        <div ref={containerRef} className='bg-black md:px-20 px-5 mx-auto pt-15 max-w-[1400px] '>
+        <div ref={containerRef} className='bg-black md:px-20 px-5 mx-auto pt-15 max-w-[1440px] '>
         <div><h1 className='heading md:text-4xl text-3xl text-center text-white tracking-tight font-medium'>HOW IT WORK'S</h1></div>
         {/* CARD SECTION  */}
         <div className='flex md:flex-row flex-col justify-between items-center gap-x-3 mt-10 md:-space-y-0 -space-y-12'>
