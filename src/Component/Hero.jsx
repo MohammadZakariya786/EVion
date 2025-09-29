@@ -29,8 +29,9 @@ const Hero = () => {
 
             tl.from(usercard,{
                 
-                y: 150,
+                y: 160,
                 delay:0.3,
+                transformOrigin:'bottom center',
                 scale:3,
                 stagger:{
                     each:0.3,
@@ -47,6 +48,7 @@ const Hero = () => {
                 ease:'power2.out',})
             gsap.from('.word-a span',{
                 y:100,duration:1,delay:1,
+                transformOrigin:'center center',
                 stagger:{each:0.3,from:'start'},
                 opacity:0,
                 ease:'power2.out',
@@ -54,6 +56,7 @@ const Hero = () => {
             })
             gsap.from('.word-b span',{
                 y:100,duration:1,delay:1,
+                transformOrigin:'center center',
                 stagger:{each:0.3,from:'end'},
                 opacity:0,
                 ease:'power2.out',
@@ -96,7 +99,7 @@ const Hero = () => {
             {/* h3 text for mobile  */}
             <h3 className='heading-1 text-center md:hidden block absolute top-[12dvh]  text-[3vh]/7  text-white  font-sans font-bold'>The Future<br/><span className='text-6xl inline-block -mt-2 text-transparent [-webkit-text-stroke:2px_white]'>M<span className='text-[32px] text-white inline-block animate-spin'><GiCarWheel/></span>ves</span> <br/><span className=''>at the Speed<br/>Of</span></h3>
             {/* h3 text for laptop  */}
-            <h3 className='heading-1 md:block hidden absolute  md:top-[25%] md:text-[3.8vw]
+            <h3 className='heading-1 md:block hidden absolute  md:top-[25%] lg:top-[21%] md:text-[3.8vw]
             lg:text-[2.2vw] md:text-black  font-sans font-bold'>The Future <span className='text-3xl
             md:text-[3.8vw] lg:text-[2.2vw] inline-block  text-black'>M<span className='text-[18px] 
              md:text-[2.3vw] lg:text-[1.7vw]  text-black inline-block animate-spin'><GiCarWheel/></span>ves</span> at the Speed Of</h3>
@@ -105,8 +108,8 @@ const Hero = () => {
   top-3/8 -translate-y-1/2 
   sm:top-[42%] sm:-translate-y-1/2 md:-translate-x-[300px]
   md:top-[35%] md:-translate-y-1/2
-  lg:top-[33%] lg:-translate-y-1/2
-  xl:top-[35%] xl:-translate-y-1/2
+  lg:top-[36dvh] lg:-translate-y-1/2
+  xl:top-[35dvh] xl:-translate-y-1/2
             
              md:[mask-image:radial-gradient(ellipse_52%_70%_at_center_bottom,transparent_62%,black_90%)]
              xl:[mask-image:radial-gradient(ellipse_56%_70%_at_center_bottom,transparent_60%,black_90%)]
