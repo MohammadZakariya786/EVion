@@ -94,9 +94,9 @@ const Hero = () => {
         from-black/80  to-transparent'></div>
         <div className=' flex flex-col md:gap-y-20 z-10 relative w-full h-full justify-center items-center'>
             {/* h3 text for mobile  */}
-            <h3 className='heading-1 text-center md:hidden block absolute top-[13%]  text-[3vh]/7  text-white  font-sans font-bold'>The Future<br/><span className='text-6xl inline-block -mt-2 text-transparent [-webkit-text-stroke:2px_white]'>M<span className='text-[32px] text-white inline-block animate-spin'><GiCarWheel/></span>ves</span> <br/><span className=''>at the Speed<br/>Of</span></h3>
+            <h3 className='heading-1 text-center md:hidden block absolute top-[12dvh]  text-[3vh]/7  text-white  font-sans font-bold'>The Future<br/><span className='text-6xl inline-block -mt-2 text-transparent [-webkit-text-stroke:2px_white]'>M<span className='text-[32px] text-white inline-block animate-spin'><GiCarWheel/></span>ves</span> <br/><span className=''>at the Speed<br/>Of</span></h3>
             {/* h3 text for laptop  */}
-            <h3 className='heading-1 md:block hidden absolute  md:top-[25%] lg:top-[20%] md:text-[3.8vw]
+            <h3 className='heading-1 md:block hidden absolute  md:top-[25%] md:text-[3.8vw]
             lg:text-[2.2vw] md:text-black  font-sans font-bold'>The Future <span className='text-3xl
             md:text-[3.8vw] lg:text-[2.2vw] inline-block  text-black'>M<span className='text-[18px] 
              md:text-[2.3vw] lg:text-[1.7vw]  text-black inline-block animate-spin'><GiCarWheel/></span>ves</span> at the Speed Of</h3>

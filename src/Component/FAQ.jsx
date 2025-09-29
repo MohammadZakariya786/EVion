@@ -13,7 +13,7 @@ const FAQ = () => {
   useGSAP(()=>{
     const cards=gsap.utils.toArray(".container-card");
       gsap.from(cards,{
-        y:-200,
+        x:-100,
         opacity:0,
         duration:0.4,
         ease:'circ.inOut',
